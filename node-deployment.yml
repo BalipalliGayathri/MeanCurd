@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: nodeweb
-        image: balipalligayathri/kube-dev
+        image: balipalligayathri/develop-kube
         ports:
         - name: http
           containerPort: 3000

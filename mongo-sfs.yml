@@ -63,7 +63,7 @@ spec:
       name: db
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "mongo-storage2"
+      storageClassName: "mongo-storage3"
       resources:
         requests:
           storage: 1Gi

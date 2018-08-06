@@ -53,17 +53,17 @@ spec:
         - containerPort: 27017
           name: mongo
         volumeMounts:
-        - name: db
+        - name: dev
           mountPath: /data/db
         securityContext:
           runAsUser: 1000
           allowPrivilegeEscalation: false
   volumeClaimTemplates:
   - metadata:
-      name: db
+      name: dev
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "mongo-develop"
+      storageClassName: "mongo-kubedevelop"
       resources:
         requests:
           storage: 1Gi

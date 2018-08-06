@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nodefrontend
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: bookstore
+    spec:
+      containers:
+      - name: nodeweb
+        image: balipalligayathri/nodesfs:v2
+        ports:
+        - name: http
+          containerPort: 3000
+          protocol: TCP

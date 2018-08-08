@@ -2,7 +2,7 @@ apiVersion: "v1"
 kind: Service
 metadata:
   name: nodeservice
-  namespace: develop
+  namespace: dev
   labels:
     app: bookstore
 spec:
@@ -13,5 +13,5 @@ spec:
    - port: 90
      name: http
      targetPort: 3000
-     nodePort: 30005
+     nodePort: 30006
      protocol: TCP

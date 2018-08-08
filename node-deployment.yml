@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: nodefrontend
-  namespace: develop
+  namespace: dev
 spec:
   replicas: 3
   template:

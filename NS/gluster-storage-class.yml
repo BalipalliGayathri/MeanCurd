@@ -1,8 +1,0 @@
-apiVersion: storage.k8s.io/v1beta1
-kind: StorageClass
-metadata:
-  name: mongo-storage2
-provisioner: kubernetes.io/glusterfs
-parameters:
-  resturl: "http://10.46.0.0:8080"
-
